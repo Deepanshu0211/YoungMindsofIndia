@@ -1,0 +1,423 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+*{
+    margin:0;
+   
+     padding:0;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.bg{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(88, 63, 30, 0.514),rgba(61, 94, 40, 0.562)), url(backgroundimg/india2.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+   
+   
+}
+/* Explanation in JS tab */
+
+/* Cool font from Google Fonts! */
+@import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
+
+body {
+	margin: 0px;
+}
+
+#container {
+	/* Center the text in the viewport. */
+	position: absolute;
+	margin: auto;
+	width: 100vw;
+	height: 80pt;
+	top: 0;
+	bottom: 0;
+	
+	/* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
+	filter: url(#threshold) blur(0.6px);
+}
+
+/* Your average text styling */
+#text1, #text2 {
+	position: absolute;
+	width: 100%;
+	display: inline-block;
+	
+	font-family: 'Raleway', sans-serif;
+	font-size: 80pt;
+	
+	text-align: center;
+	
+	user-select: none;
+}
+
+.nevbar{
+    width: 100%;
+    height: 16%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+  
+    position: sticky;
+    top: 0%;
+    border-top: 1px solid rgba(15, 11, 3, 0.678);
+    border-bottom: 1px solid rgba(221, 148, 12, 0.548);
+    border-color: rgba(221, 148, 12, 0.534);
+    border: 1px  black;
+    background: rgba(128, 85, 5, 0.062);
+    background-clip: padding-box;
+
+   
+   
+ 
+    
+}
+.logo{
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+}
+.nevbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    
+}
+.nevbar ul li a{
+    text-decoration: none;
+    color: #f5f5f5;
+    text-transform: uppercase;
+ 
+    
+}
+
+
+.nevbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #050303;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+    
+    
+}
+
+.nevbar ul li:hover:after
+{
+    width: 100%;
+    background-color: #dceb0f;
+   
+
+}
+
+.content{
+    width: 95%;
+    position: absolute;
+    top: 15%;
+    transform:translate(-505);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 90px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    display: inline-block;
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-family: 'Laila', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    font-weight: bolder;
+    padding: 16px 24px;
+    background: transparent;
+    margin: 20px;
+    border: 2px solid rgb(11, 2, 17);
+    border-radius: 200px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.2s;
+    
+
+}
+button::before{
+    content: '';
+    position: absolute;
+    background: rgba(173, 19, 40, 0.651);
+    height: 100px;
+    width: 1000px;
+    border-radius: 30%;
+    z-index: -1;
+    top:100%;
+    left:100%
+    
+}
+button:hover{
+    color: rgb(218, 215, 12);
+    transition: 0.7s
+}
+
+button:hover::before{
+    top:-60%;
+    left: -150%;
+    transition: 1.5s;
+
+}
+button:active::before{
+    background: rgb(30, 128, 0);
+    transition: 0.1s;
+}
+
+
+h1{
+    font-size: small;
+    font-family: 'Laila', sans-serif;
+    color: rgb(225, 229, 236);
+    margin: auto;
+}
+h2{
+   
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Laila', sans-serif;
+    font-size: 50px;
+    top: 125%;
+
+   
+  
+   
+    
+}
+
+
+.box2{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(88, 63, 30, 0.514),rgba(61, 94, 40, 0.562)),url(team4.jpg);
+    background-color: #aaa;
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+}
+.box2 h1{
+    text-align: center;
+    font-size: 50;
+    padding-top: 20px;
+    margin: auto;
+    color: rgb(231, 230, 228);
+    text-shadow: 2px 2px 4px #000000;
+    display: table-cell;
+    width: 95%;
+    position: absolute;
+ 
+    transform:translate(-505);
+    text-align: center;
+}
+.box2 p{
+    text-align: center;
+    font-size: 25;
+    padding-top: 10%;
+   
+    color: rgb(23, 167, 124);
+   padding-left: 15;
+  
+    width: 95%;
+    position: absolute;
+ 
+    transform:translate(-505);
+    text-align: center;
+}
+.box3{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(88, 63, 30, 0.514),rgba(61, 94, 40, 0.562)),url(team3.jpg);
+    
+    background-color: #aaa;
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+
+}
+.box3 h1{
+    text-align: center;
+    font-size: 50;
+    padding-top: 20px;
+    color: rgb(231, 230, 228);
+    margin: auto;
+    text-shadow: 2px 2px 4px #000000;
+    display: table-cell;
+    width: 95%;
+    position: absolute;
+    
+    transform:translate(-505);
+    text-align: center;
+
+}
+.box3 p{
+    text-align: center;
+    font-size: 25;
+    padding-top: 10%;
+   
+    color: rgb(14, 193, 206);
+   padding-left: 15;
+  
+    width: 95%;
+    
+ 
+  
+    text-align: center;
+
+}
+.box3 .purpose h5{
+    text-align: center;
+    font-size: 50;
+    padding-top: 5%;
+    color: rgb(231, 230, 228);
+    margin: auto;
+    text-shadow: 2px 2px 4px #000000;
+    display: table-cell;
+    width: 95%;
+    position: absolute;
+    font-family: 'Tillana', cursive;; 
+    
+    transform:translate(-505);
+    text-align: center;
+}
+.box3 .purpose p{
+    text-align: center;
+    font-size: 25;
+    padding-top: 13%;
+   
+    color: rgb(228, 136, 16);
+   padding-left: 15;
+  
+    width: 95%;
+   
+ 
+    transform:translate(-505);
+    text-align: center;
+
+}
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: rgb(20, 20, 7);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    padding: 40px ;
+    background-color: #dbd3d3;
+    background: transparent;
+}
+.footer .social{
+    
+    text-align: center;
+    padding-bottom: 25px;
+    color: #4b4b44;
+}
+.footer .social a{
+    font-size: 24px;
+    color: inherit;
+   
+    width: 50px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0.8px;
+    opacity: 0.75;
+}
+
+.footer .social a:hover{
+    color: rgba(255, 0, 0, 0.315);
+    opacity: 0.9;
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+
+}
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+
+}
+.footer ul li a:hover{
+    opacity: 1;
+}
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}
+
+
+
+
+

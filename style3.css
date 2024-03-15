@@ -1,0 +1,375 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+                                                
+}
+body{
+  background-color: #e4d9e4;
+  background-image: linear-gradient(rgba(88, 63, 30, 0.514),rgba(61, 94, 40, 0.562)), url(backgroundimg/image1.jpg);
+  background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.bg{
+  width: auto;
+  height: 0 auto;
+  background-image: linear-gradient(rgba(204, 115, 25, 0),rgba(158, 123, 6, 0));
+  background-size: cover;
+  background-position: center;
+ 
+}
+.background{
+  width: 100%;
+  height: 0 auto;
+  background-image: linear-gradient(rgba(158, 123, 6, 0),rgba(25, 204, 40, 0.021));
+  background-size: cover;
+  background-position: center;
+
+}
+.backg2{
+  width: 100%;
+  height: 0 auto;
+  background-image: linear-gradient(rgba(25, 204, 40, 0),rgba(236, 236, 236, 0.007));
+  background-size: cover;
+  background-position: center;
+}
+.backg3{
+  width: 100%;
+  height: 0 auto;
+  background-image: linear-gradient(rgba(229, 240, 230, 0),rgba(236, 236, 236, 0.103));
+  background-size: cover;
+  background-position: center;
+
+}
+.row{
+  border: 2px solid rgba(233, 229, 229, 0);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 1em;
+  font-family: 'Copperplate', sans-serif;
+  text-align: center;
+}
+.column{
+  width: 100%;
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0);
+  padding: 5em 0;
+  margin: 0.5em auto;
+  margin-block: 0.5em;
+  
+
+}
+.head h1{
+  width: 100%;
+  font-family: 'Copperplate', sans-serif;
+  margin: 0 auto;                                              
+  text-align: center;
+  font-size: 5.5em;
+  font-family: 'Oxygen', sans-serif;
+  text-shadow: 2px 2px 4px #000000;
+  color: rgb(15, 2, 2);
+}
+h1{
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;                                              
+  text-align: center;
+  font-size: 3.5em;
+  font-family: 'Khand', sans-serif;
+  text-shadow: 2px 2px 4px #000000;
+  color: rgb(228, 15, 15);
+}
+.card{
+  
+  
+  width: 300px;
+ height: 400;
+  border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  transition: 0.3s;
+  animation: fade 2s ease-in 0s;
+  background: transparent;
+  cursor: pointer;
+  margin-right: 30px;
+  
+/*    height: 100%;
+  width: 90%;
+  padding: 50em 5em;
+  border-radius: 0.6em;
+  color: rgb(15, 3, 15);
+  cursor: pointer;
+  background: transparent;
+  
+  transition: 0.3s;
+  padding: 30px 50px;
+  background: transparent;
+  cursor: pointer;
+  margin-right: 30px; */
+ 
+}
+@keyframes fade{
+  0%{
+      opacity:0%;
+  }
+  100%{
+      opacity: 100%;
+  }
+}
+.card:hover {
+  height: 520px;
+  box-shadow: 0 0 2.2em rgba(124, 54, 8, 0.979);
+}
+.card .img-container{
+  width: 8em;
+  height: 8em;
+ 
+   background-color: #8323f03b;
+  padding: 0.5em;
+  border-radius: 50%;
+  margin: 0 auto 2em auto;
+  transition: 0.5s;
+  position: relative;
+
+  transform: translateY(-80px);
+  z-index: 1;
+
+  
+}
+.card:hover .img-container{
+  box-shadow: 0 0 2.2em rgba(112, 6, 199, 0.979);
+}
+.card img{
+  width: 110;
+  height: 7em;
+  border-radius: 50%;
+  position: relative;
+
+ 
+  
+}
+.card h3{
+  opacity: 0;
+  font-weight: 500;
+  height: 11em;
+
+  
+}
+.card p{
+  height: 10%;
+  padding: 10px 20px;
+  text-align: center;
+  transform: translateY(-450px);
+  opacity: 0;
+  transition: 0.3s
+  
+}
+.card p{
+  font-weight: bold;
+ 
+    color: #000000;
+    
+  }
+  .card:hover > p {
+    opacity: 100%;
+    transform: translateY(-194px);
+  }
+.icons{
+  width: 50%;
+  min-width: 180px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-180px);
+  opacity: 0;
+  transition: 0.3s
+  
+  
+  
+}
+.card a{
+  height: 100;
+  padding: 10px 20px;
+  text-align: center;
+  transform: translateY(-180px);
+  opacity: 0;
+  transition: 0.3s
+
+  
+
+  
+}
+
+.card:hover{
+    opacity: 100%;
+    transform: translateY(-80px);
+    
+  background: rgba(110, 107, 107, 0.479);
+  color: #03e4e4;
+  
+}
+.card:hover h3{
+  opacity: 100;
+}
+.card:hover .img-container{
+  transform: scale(1.15);
+  transition: 0.5s;
+}
+
+.nevbar{
+  width: 100%;
+  height: 16%;
+  margin: auto;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+
+  position: sticky;
+  top: 0%;
+  border-top: 1px solid rgba(15, 11, 3, 0.678);
+  border-bottom: 1px solid rgba(221, 148, 12, 0.548);
+  
+  border: 1px  black;
+  
+  background-clip: padding-box;
+
+ 
+ 
+
+  
+}
+.logo{
+  width: 250px;
+  height: 250px;
+  cursor: pointer;
+}
+.nevbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  
+}
+.nevbar ul li a{
+  text-decoration: none;
+  color: #f5f5f5;
+  text-transform: uppercase;
+
+  
+}
+
+
+.nevbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #050303;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+  
+  
+}
+
+.nevbar ul li:hover:after
+{
+  width: 100%;
+  background-color: #dceb0f;
+  border: #000000;
+ 
+
+}
+.footer{
+  padding: 40px ;
+  background-color: #dbd3d3;
+}
+.footer .social{
+  
+  text-align: center;
+  padding-bottom: 25px;
+  color: #4b4b44;
+}
+.footer .social a{
+  font-size: 24px;
+  color: inherit;
+ 
+  width: 50px;
+  height: 40px;
+  line-height: 38px;
+  text-align: center;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0.8px;
+  opacity: 0.75;
+}
+.footer .social a:hover{
+  color: rgba(255, 0, 0, 0.315);
+  opacity: 0.9;
+}
+.footer ul{
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+.footer ul li a{
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+
+}
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+
+}
+.footer ul li a:hover{
+  opacity: 1;
+}
+.footer .copyright{
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+}
+
+
+
+
+
+
+
+@media screen and (min-width:768px){
+  section{
+    padding: 1em 7em;
+   
+    
+  }
+}
+@media screen and (min-width:992px){
+  section{
+    padding: 1em;
+    border-collapse: separate;
+    border-spacing: 15px;
+  }
+  .card{
+    padding: 5em 1em;
+    max-width: 100%; 
+    margin: 0.5em auto;
+    
+  }
+  .column{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 1em;
+  }
+}

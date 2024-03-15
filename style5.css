@@ -1,0 +1,234 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif; 
+    
+}
+
+
+
+
+
+body {
+    background: rgb(135, 139, 143);
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(88, 63, 30, 0.514),rgba(61, 94, 40, 0.562)), url(ljyhjbkw1boa1.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+   
+}
+.heading h1{
+    height: 50%;
+    width: 100%;
+    font-weight: 500;
+    
+    position: absolute;
+    text-align: center;
+    text-transform: capitalize;
+    
+    font-size: 50px;
+    text-decoration: underline;
+   margin-bottom: 100%;
+}
+
+
+/*prespective change krna hai */
+.carousel{
+    height: 120vh;
+    perspective: 500px;
+    
+}
+
+.carousel .carousel-item{
+    width: 450px;
+}
+.card {
+	position: relative;
+	margin: 0.5em 0 1rem 0;
+	background-color: #fff;
+	width: 450px;
+	height: 490px;
+	color: #262626;
+  animation: fade 2s ease-in 0s;
+	
+  border-radius: 30px;
+	box-shadow: 0 8px 20px 0px rgba(0,0,0,0.2);
+}
+@keyframes fade{
+  0%{
+      opacity:0%;
+  }
+  100%{
+      opacity: 100%;
+  }
+}
+.img-area img {
+	border-radius: 60%;
+   
+	border: 7px solid #fff;
+    
+	margin-top: -80px;
+}
+
+.box1 {
+	background: linear-gradient(#08dbbfc7,#521fddb0 );
+	height: 120px;
+
+  border-radius: 25px 25px 0 0;
+
+}
+.img-area {
+  text-align: center;
+}
+.img-area img {
+  width: 30%;
+}
+.main-text {
+	padding: 8px 0;
+	text-align: center;
+}
+.main-text h2 {
+	font-weight: 900;
+	font-size: 20px;
+	margin: 0 0 20px;
+  
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-text p{
+  font-size: 16px;
+  padding: 0 35px;
+  font-family: 'Laila', sans-serif;
+}
+.nevbar{
+    width: 100%;
+    height: 10%;
+    margin: auto;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    top: 10%;
+    
+ 
+ 
+    
+
+   
+   
+ 
+    
+}
+.logo{
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+}
+.nevbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    
+}
+.nevbar ul li a{
+    text-decoration: none;
+    color: #e0dada;
+    text-transform: uppercase;
+ 
+    
+}
+
+
+.nevbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #050303;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+    
+    
+}
+
+.nevbar ul li:hover:after
+{
+    width: 100%;
+    background-color: #dceb0f;
+   
+
+}
+
+
+  .footer{
+    padding: 40px ;
+    background-color: #dbd3d3;
+  }
+  .footer .social{
+    
+    text-align: center;
+    padding-bottom: 25px;
+    color: #4b4b44;
+  }
+  .footer .social a{
+    font-size: 24px;
+    color: inherit;
+   
+    width: 50px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0.8px;
+    opacity: 0.75;
+  }
+  .footer .social a:hover{
+    transition: 0.7s;
+    color: rgba(26, 24, 24, 0.363);
+    opacity: 0.9;
+  }
+  .footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .footer ul li a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+  
+  }
+  .footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+  
+  }
+  .footer ul li a:hover{
+    opacity: 1;
+  }
+  .footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+  }
+  
+  

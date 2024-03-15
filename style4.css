@@ -1,0 +1,351 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; 
+    
+    
+}
+body{
+    background-image: linear-gradient(rgba(88, 63, 30, 0.514),rgba(61, 94, 40, 0.562)), url(4b270f5d-dd07-428c-92a8-f595be93c28e.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    /*and team ??? 
+    yes kr skte lakin 
+    mahenat ka kaam hai upload karo fir hatao yahi sb
+    team kal banao ya aaj mfir meko list dedo
+    and uska insta ya dc 
+    han hojayega
+    personally 🌚mere pita shree bagal me hai puri family jag gai hai 
+    chota baccha rone laga to usko chup krwane ke liye
+    mere pas jada time nhi hai*/
+
+}
+.head h1{
+    height: 50%;
+    width: 100%;
+    font-weight: 500;
+    position: absolute;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Laila', sans-serif;
+    font-size: 50px;
+    text-decoration: underline;
+    animation: fade 2s ease-in 0s;
+   
+}
+#faq{
+    margin: 100px auto;
+    width: 600px;
+    align-items: center;
+    animation: fade 4s ease-in 0s;
+
+}
+@keyframes fade{
+    0%{
+        opacity:0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+#faq li{
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+    background: #fcfcfc;
+    padding: 10px;
+    border-radius: 10px;
+}
+#faq li label{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #e41414;
+}
+#faq li label span{
+    transform: rotate(90deg);
+    font-size: 22px;
+    color: black;
+}
+#faq label + input[type="radio"]{
+    display: none;
+}
+#faq .content{
+    padding: 0.10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s;
+}
+#faq label + input[type="radio"]:checked + .content{
+    max-height: 400px;
+    
+    
+}
+
+
+
+.nevbar{
+    width: 100%;
+    height: 16%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+  
+   
+    top: 0%;
+  
+
+   
+   
+ 
+    
+}
+.logo{
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+}
+.nevbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    
+}
+.nevbar ul li a{
+    text-decoration: none;
+    color: #f5f5f5;
+    text-transform: uppercase;
+ 
+    
+}
+
+
+.nevbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #050303;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+    
+    
+}
+
+.nevbar ul li:hover:after
+{
+    width: 100%;
+    background-color: #05af1c;
+   
+
+}
+.wrapper{
+    display: inline-flexbox;
+    margin: 100px auto;
+    width: 500px;
+    align-items: center;
+}
+.wrapper .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+   
+    margin: 100px 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:hover{
+    width: 200px;
+  }
+  .wrapper .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:nth-child(1):hover .icon{
+    background: #03060e;
+  }
+  .wrapper .button:nth-child(2):hover .icon{
+    background: #030d13;
+  }
+  .wrapper .button:nth-child(3):hover .icon{
+    background: #0c0306;
+  }
+  .wrapper .button:nth-child(4):hover .icon{
+    background: #0c0202;
+  }
+  .wrapper .button:nth-child(5):hover .icon{
+    background: #070202;
+  }
+  .wrapper .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:hover .icon i{
+    color: #fff;
+  }
+  .wrapper .button span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:nth-child(1) span{
+    color: #010308;
+  }
+  .wrapper .button:nth-child(2) span{
+    color: #01090e;
+  }
+  .wrapper .button:nth-child(3) span{
+    color: #0e0105;
+  }
+  .wrapper .button:nth-child(4) span{
+    color: #130202;
+  }
+  .wrapper .button:nth-child(5) span{
+    color: #0f0101;
+  }
+.bg{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgba(88, 63, 30, 0.514),rgba(61, 94, 40, 0.562)), url(y1.jpg);
+    background-size: cover;
+    background-position: center;
+    
+   
+}
+.footer{
+    padding: 40px ;
+    background-color: #dbd3d3;
+}
+.footer .social{
+    
+    text-align: center;
+    padding-bottom: 25px;
+    color: #4b4b44;
+}
+.footer .social a{
+    font-size: 24px;
+    color: inherit;
+   
+    width: 50px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0.8px;
+    opacity: 0.75;
+}
+.footer .social a:hover{
+    transition: 0.7s;
+    color: rgba(255, 0, 0, 0.315);
+    opacity: 0.9;
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+
+}
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+
+}
+.footer ul li a:hover{
+    color: #050303;
+    transition: 0.7s;
+    opacity: 100;
+}
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #833c3c;
+}
+
+/*
+.contact{
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    display: flex;
+    
+    align-items: center;
+   
+    justify-content: center;
+}
+form{
+    background: #4b4b44;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+
+}
+form h3{
+    color:red;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+form input,form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #fffafa;
+    font-size: 16px;
+}
+form button{
+    padding: 15px;
+    background: red;
+    color:#fffafa;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}*/

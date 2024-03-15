@@ -1,0 +1,257 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; 
+    
+}
+body{
+    background-color: aquamarine;
+    
+}
+.heading{
+    text-align: center;
+    margin-top: 15px;
+
+}
+.heading h1{
+    font-size: 60px;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(218, 79, 14);
+    margin-bottom: 0px;
+    text-shadow: 2px 2px 4px #000000;
+}
+/*.heading p{
+    font-size: 20px;
+    color: #f3eded;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0px;
+}*/
+/*@keyframes blink {
+    5% {
+        color: #010a06;
+      
+    }
+}*/
+ 
+/*.blink {
+    animation-name: blink;
+    animation-duration: 2s;
+    transition: 0.7s;
+    animation-iteration-count: infinite;
+}*/
+.about-us{
+    display:flex;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+.about-us img{
+    flex: 0 50%;
+    max-width: 20%;
+    height: auto;
+    color: white;
+   
+}
+.content{
+    padding: 35px;
+}
+.content h2{
+    
+  text-shadow: 2px 2px 4px #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#f1f8f4;
+    font-size: 30px;
+    margin: 25px 0px;
+}
+.content p{
+    color: #edf3f0;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 15px 0px;
+    font-family: 'Times New Roman', Times, serif;
+    animation: fade 2s ease-in 0s;
+}
+.read-more-btn{
+    display: inline-block;
+    color: #fff;
+    background-color: #008400;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.read-more-btn:hover{
+    background-color: #006dd0;
+
+}
+@media(max-width:700px){
+ 
+ 
+    .about-us{
+        flex-direction: column;
+    }
+    .about-us img{
+        flex: 0 100%;
+        max-width: 100%;
+    }
+    .content{
+        flex:0 100%;
+        max-width: 100%;
+        padding:15px;
+    }
+}
+
+.nevbar{
+    width: 100%;
+    height: 16%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+  
+   
+    top: 0%;
+    border-top: 1px solid rgba(15, 11, 3, 0.678);
+    border-bottom: 1px solid rgba(221, 148, 12, 0.548);
+    border-color: rgba(221, 148, 12, 0.534);
+    border: 1px  black;
+    background: rgba(128, 85, 5, 0.062);
+    background-clip: padding-box;
+
+   
+   
+ 
+    
+}
+.logo{
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+}
+.nevbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    
+}
+.nevbar ul li a{
+    text-decoration: none;
+    color: #f5f5f5;
+    text-transform: uppercase;
+ 
+    
+}
+
+
+.nevbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #050303;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+    
+    
+}
+
+.nevbar ul li:hover:after
+{
+    width: 100%;
+    background-color: #dceb0f;
+   
+
+}
+.bg{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgba(88, 63, 30, 0.514),rgba(61, 94, 40, 0.562)), url(backgroundimg/y1.jpg);
+    background-size: cover;
+    background-position: center;
+    
+   
+}
+.footer{
+    padding: 40px ;
+    background-color: #dbd3d3;
+}
+.footer .social{
+    
+    text-align: center;
+    padding-bottom: 25px;
+    color: #4b4b44;
+}
+.footer .social a{
+    font-size: 24px;
+    color: inherit;
+   
+    width: 50px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0.8px;
+    opacity: 0.75;
+}
+.footer .social a:hover{
+    color: rgba(255, 0, 0, 0.315);
+    opacity: 0.9;
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+
+}
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+
+}
+.footer ul li a:hover{
+    opacity: 1;
+}
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}
+
+@keyframes fade{
+    0%{
+        opacity:0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+
+
+
